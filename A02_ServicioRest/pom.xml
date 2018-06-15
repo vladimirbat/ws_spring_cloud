@@ -19,6 +19,18 @@
 			</plugin>
 		</plugins>
 	</build>
+	<!-- ======== GESTIÓN DE DEPENDENCIAS (VERSIONES) DE SPRING CLOUD ======== -->
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-dependencies</artifactId>
+				<version>Edgware.SR3</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
 	<dependencies>
 		<!-- ################ WEB Y REST ###################### -->
 		<dependency>
@@ -42,10 +54,14 @@
 		</dependency>
 		<!-- ################ SPRING BOOT ADMIN (CLIENTE) ###################### -->
 		<dependency>
-		    <groupId>de.codecentric</groupId>
-		    <artifactId>spring-boot-admin-starter-client</artifactId>
-		    <version>1.5.7</version>
+			<groupId>de.codecentric</groupId>
+			<artifactId>spring-boot-admin-starter-client</artifactId>
+			<version>1.5.7</version>
 		</dependency>
-		
+		<!-- ################ SPRING CLOUD CONFIG (CLIENT) ###################### -->
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-config</artifactId>
+		</dependency>
 	</dependencies>
 </project>

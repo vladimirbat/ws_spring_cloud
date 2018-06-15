@@ -32,11 +32,7 @@
 		</dependencies>
 	</dependencyManagement>
 	<dependencies>
-		<!-- ################ SPRING CLOUD CONFIG (CLIENT) ###################### -->
-		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-config</artifactId>
-		</dependency>
+		
 		<!-- ################ SPRING CLOUD CONFIG (SERVIDOR) ###################### -->
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
