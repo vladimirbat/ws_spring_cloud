@@ -1,0 +1,4 @@
+Descargar todo el repositorio: 
+	git clone https://github.com/vladimirbat/ws_spring_cloud.git
+Actualizar el repositorio (estando en la carpeta que ha creado el clone):
+	git pull origin master
